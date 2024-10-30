@@ -1,8 +1,9 @@
 # My Package
 
-A template npm package with best practices, designed to kickstart your Node.js project. This template includes TypeScript, ESLint, Prettier, GitHub Actions CI, and example configurations for common project needs.
+A template npm package with best practices, designed to kickstart your Node.js project. This template includes ESLint, Prettier, GitHub Actions CI, and example configurations for common project needs.
 
 ## Table of Contents
+
 1. [Features](#features)
 2. [Getting Started](#getting-started)
 3. [Folder Structure](#folder-structure)
@@ -13,7 +14,6 @@ A template npm package with best practices, designed to kickstart your Node.js p
 
 ## Features
 
-- **TypeScript**: Strong typing support to ensure code reliability.
 - **ESLint and Prettier**: Enforced code standards and formatting.
 - **GitHub Actions CI**: Automated testing and linting on pull requests.
 - **Basic Project Structure**: Predefined folders for easy organization.
@@ -22,22 +22,27 @@ A template npm package with best practices, designed to kickstart your Node.js p
 ## Getting Started
 
 ### Prerequisites
+
 - **Node.js** (version 14.x or higher)
 - **npm** (comes with Node.js) or **yarn** if preferred.
 
 ### Installation
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/yourusername/my-package.git
    cd my-package
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
+
    Or if using yarn:
+
    ```bash
    yarn install
    ```
@@ -56,7 +61,7 @@ my-package/
 │   │   └── feature_request.md
 │   ├── workflows/             # GitHub Actions workflows
 │   │   └── ci.yml
-├── src/                       # Main source code (TypeScript/JavaScript files)
+├── src/                       # Main source code (JavaScript files)
 │   └── index.js
 ├── dist/                      # Distribution folder (generated after build)
 ├── tests/                     # Folder for tests
@@ -66,10 +71,8 @@ my-package/
 ├── LICENSE                    # License file (MIT)
 ├── README.md                  # Project documentation
 ├── package.json               # npm package configuration
-├── tsconfig.json              # TypeScript configuration
 ├── .eslintrc.js               # ESLint configuration
 ├── .prettierrc                # Prettier configuration
-├── .babelrc                   # Babel configuration (if using Babel)
 ├── CONTRIBUTING.md            # Contribution guidelines
 ├── CHANGELOG.md               # Changelog for releases
 └── CODE_OF_CONDUCT.md         # Code of conduct for contributors
@@ -79,8 +82,7 @@ my-package/
 
 - **`.gitignore`**: Specifies files ignored by Git.
 - **`.npmignore`**: Specifies files excluded from the npm package.
-- **`tsconfig.json`**: TypeScript configuration file.
-- **`.eslintrc.js`**: ESLint configuration for linting JavaScript/TypeScript files.
+- **`.eslintrc.js`**: ESLint configuration for linting JavaScript files.
 - **`.prettierrc`**: Prettier configuration to enforce code style.
 - **`.babelrc`**: Babel configuration (optional, if using Babel).
 - **`package.json`**: Defines package metadata and dependencies.
@@ -89,10 +91,6 @@ my-package/
 
 This template includes npm scripts for common tasks. You can run these using `npm run <script-name>`:
 
-- **`build`**: Compiles TypeScript files to JavaScript (output in `dist/`).
-  ```bash
-  npm run build
-  ```
 - **`lint`**: Checks code for linting errors based on ESLint rules.
   ```bash
   npm run lint

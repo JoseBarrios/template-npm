@@ -1,5 +1,5 @@
 class Example {
-  constructor(array = []) {
+  constructor() {
     this.example = true;
   }
 
