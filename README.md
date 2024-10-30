@@ -23,7 +23,7 @@ A template npm package with best practices, designed to kickstart your Node.js p
 
 ### Prerequisites
 
-- **Node.js** (version 14.x or higher)
+- **Node.js** (version 23.x or higher)
 - **npm** (comes with Node.js) or **yarn** if preferred.
 
 ### Installation
@@ -31,20 +31,14 @@ A template npm package with best practices, designed to kickstart your Node.js p
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/my-package.git
-   cd my-package
+   git clone https://github.com/josebarrios/template-npm.git
+   cd template-npm
    ```
 
 2. **Install dependencies**:
 
    ```bash
    npm install
-   ```
-
-   Or if using yarn:
-
-   ```bash
-   yarn install
    ```
 
 3. **Start Development**: You’re ready to begin building your npm package. Edit files under `src/`, run tests, and build for production.
@@ -54,7 +48,7 @@ A template npm package with best practices, designed to kickstart your Node.js p
 The template has the following structure:
 
 ```
-my-package/
+template-npm/
 ├── .github/                   # GitHub-specific files
 │   ├── ISSUE_TEMPLATE/        # Templates for issues
 │   │   └── bug_report.md
@@ -63,7 +57,6 @@ my-package/
 │   │   └── ci.yml
 ├── src/                       # Main source code (JavaScript files)
 │   └── index.js
-├── dist/                      # Distribution folder (generated after build)
 ├── tests/                     # Folder for tests
 │   └── example.test.js
 ├── .gitignore                 # Ignored files for Git
@@ -84,7 +77,6 @@ my-package/
 - **`.npmignore`**: Specifies files excluded from the npm package.
 - **`.eslintrc.js`**: ESLint configuration for linting JavaScript files.
 - **`.prettierrc`**: Prettier configuration to enforce code style.
-- **`.babelrc`**: Babel configuration (optional, if using Babel).
 - **`package.json`**: Defines package metadata and dependencies.
 
 ## Scripts
@@ -103,7 +95,7 @@ This template includes npm scripts for common tasks. You can run these using `np
   ```bash
   npm run test
   ```
-- **`prepublishOnly`**: Runs lint, tests, and build before publishing to ensure code quality.
+- **`prepublishOnly`**: Runs lint, format, audit and tests, before publishing to ensure code quality.
 
 ## Using GitHub Actions for CI
 
@@ -116,7 +108,7 @@ We welcome contributions to improve this template. Here’s how you can help:
 1. **Fork the repository**.
 2. **Clone your forked repository**:
    ```bash
-   git clone https://github.com/yourusername/my-package.git
+   git clone https://github.com/josebarrios/template-npm.git
    ```
 3. **Create a new branch**:
    ```bash
